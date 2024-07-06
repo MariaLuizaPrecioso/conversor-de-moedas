@@ -168,7 +168,7 @@ const dropList = document.querySelectorAll("form select"),
   getButton = document.querySelector("form button");
 
 for (let i = 0; i < dropList.length; i++) {
-  for (let currency_code br country_list) {
+  for (let currency_code in country_list) {
     let selected =
       i == 0
         ? currency_code == "USD"
@@ -232,7 +232,5 @@ function getExchangeRate() {
       let totalExRate = (amountVal * exchangeRate).toFixed(2);
       exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
     })
-    .catch(() => {
-      exchangeRateTxt.innerText = "Algo deu errado";
-    });
+    
 }
