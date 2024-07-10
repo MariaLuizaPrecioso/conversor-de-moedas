@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt" >
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Moedas Gratuito</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- Parcial -->
+<div class="wrapper">
+  <header>Conversor de Moedas</header>
+  <form action="#">
+    <div class="amount">
+      <p>Insira a Quantia</p>
+      <input type="text" value="1">
+    </div>
+    <div class="drop-list">
+      <div class="from">
+        <p>De</p>
+        <div class="select-box">
+          <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+          <select>
+            <!-- Vamos inserir a tag de opções pelo JavaScript -->
+          </select>
+        </div>
+      </div>
+      <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+      <div class="to">
+        <p>Para</p>
+        <div class="select-box">
+          <img src="https://flagcdn.com/48x36/in.png" alt="flag">
+          <select>
+            <!-- Vamos inserir a tag de opções pelo JavaScript -->
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="exchange-rate">Convertendo...</div>
+    <button>Converter</button>
+  </form>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
